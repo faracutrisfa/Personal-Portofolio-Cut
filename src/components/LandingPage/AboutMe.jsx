@@ -1,5 +1,5 @@
 export default function AboutMe() {
     return (
-      <div id="AboutMe">This is AboutMe</div>
+      <div id="AboutMe" className="font-Inter bg-primary-50">This is AboutMe</div>
     )
   }
