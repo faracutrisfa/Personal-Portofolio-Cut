@@ -3,7 +3,7 @@ import Navbar from "../Navbar";
 
 const PageLayout = ({children}) => {
   return (
-    <div className="">
+    <div className="font-Inter">
         <Navbar/>
         {children}
         <Footer/>
