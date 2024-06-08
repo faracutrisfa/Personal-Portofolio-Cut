@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import gojo from "../../assets/image/gojo_tumbal.svg"
 
 export default function AboutMe() {
