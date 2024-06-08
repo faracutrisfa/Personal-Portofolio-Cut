@@ -19,7 +19,13 @@ export default {
       },
       fontFamily: {
         Inter: ['Inter']
-      }
+      },
+      width: {
+        '172': '768px', 
+        '85' : '343px',
+        '125' : '500px',
+        '142' : '570px',
+      },
     },
   },
   plugins: [],

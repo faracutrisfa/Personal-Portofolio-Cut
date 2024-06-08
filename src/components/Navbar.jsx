@@ -3,15 +3,16 @@ import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 import Logo from "../assets/image/logoCut.svg";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
   return (
-    <nav className="flex justify-between items-center font-medium text-base text-primary-600 px-20 py-4">
+    <nav className="flex justify-between items-center font-medium text-base text-primary-600 lg:px-20 px-4 py-4">
       <img src={Logo} alt="logo" />
-      <ul className="gap-6 hidden lg:flex">
+      <ul className="gap-6 hidden md:flex">
         <Link
           spy={true}
           smooth={true}
@@ -40,13 +41,13 @@ export default function Navbar() {
           <a
             href="https://drive.google.com/drive/folders/1sP9alvtJpKOGglPtPbCgJfGnJly-9Ogf?usp=sharing"
             target="_blank"
-            className="border bg-secondary-300 rounded-xl px-4 py-2">
+            className="border bg-secondary-300 rounded-xl px-4 py-2 active:bg-secondary-900">
             Download CV
           </a>
         </li>
       </ul>
 
-      <div className="block lg:hidden relative">
+      <div className="block md:hidden relative">
         <button
           onClick={handleClick}>
           {click ? <IoClose size={24} /> : <RxHamburgerMenu size={24} />}
@@ -62,7 +63,7 @@ export default function Navbar() {
             </button>
           </div>
           <hr className="w-full border-t-2 border-primary-50"></hr>
-          <ul className="flex flex-col items-start gap-4 px-4 py-4 font-medium test-base">
+          <ul className="flex flex-col gap-4 px-4 py-4 font-medium test-base items-center">
             <Link
               spy={true}
               smooth={true}
@@ -92,7 +93,7 @@ export default function Navbar() {
               <a
                 href="https://drive.google.com/drive/folders/1sP9alvtJpKOGglPtPbCgJfGnJly-9Ogf?usp=sharing"
                 target="_blank"
-                className="border bg-secondary-300 rounded-xl px-4 py-2">
+                className="border bg-secondary-300 rounded-xl px-7 py-2 active:bg-secondary-900">
                 Download CV
               </a>
             </li>
