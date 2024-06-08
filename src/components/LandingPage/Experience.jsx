@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Experience() {
   return (
-    <section id="Experience" className="lg:px-20 px-4 py-24 h-auto">
+    <section id="Experience" className="lg:px-20 px-4 py-24 h-auto bg-primary-50">
       <div className="flex flex-col items-center gap-4">
         <motion.button
           whileTap={{
