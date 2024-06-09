@@ -1,16 +1,41 @@
 import { Link } from "react-scroll";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 import Logo from "../assets/image/logoCut.svg";
-import { motion, useScroll, useTransform } from "framer-motion";
+import LogoDua from "/Logo.svg";
 
 export default function Navbar() {
   const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+  const handleClick = () => setClick(!click)
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPos = window.pageYOffset;
+      if (scrollPos > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
 
   return (
-    <nav className="flex justify-between items-center font-medium text-base text-primary-600 lg:px-20 px-4 py-4">
+    <nav className={`w-full flex justify-between py-6 px-4 md:px-20 fixed top-0 z-50 transition-colors duration-300 ${isScrolled ? "bg-opacity-90 bg-primary-50 text-primary-900 shadow-lg" : "bg-transparent text-primary-600"}`}>
       <img src={Logo} alt="logo" />
       <ul className="gap-6 hidden md:flex">
         <Link
@@ -37,7 +62,7 @@ export default function Navbar() {
           to="contact">
           <li className="hover:border-secondary-900 hover:text-secondary-900">Contact</li>
         </Link>
-        <li className="ml-6 font-bold text-primary-900">
+        <li className="ml-6 font-bold text-primary-900 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300">
           <a
             href="https://drive.google.com/drive/folders/1sP9alvtJpKOGglPtPbCgJfGnJly-9Ogf?usp=sharing"
             target="_blank"
@@ -57,7 +82,7 @@ export default function Navbar() {
         <div
           className={`fixed top-0 right-0 h-full w-2/3 bg-white shadow-lg transition-transform ${click ? 'translate-x-0 duration-500' : 'translate-x-full duration-500'}`}>
           <div className="flex justify-between items-center p-4">
-            <img src={Logo} alt="logo" className="h-6" />
+            <img src={LogoDua} alt="logo" className="h-12" />
             <button onClick={handleClick}>
               <IoClose size={24} />
             </button>
@@ -89,7 +114,7 @@ export default function Navbar() {
               <li className="hover:border-secondary-900 hover:text-secondary-900">Contact</li>
             </Link>
             <hr className="w-full border-t-2 border-primary-50"></hr>
-            <li className="font-bold text-primary-900 mt-4">
+            <li className="font-bold text-primary-900 mt-4 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300">
               <a
                 href="https://drive.google.com/drive/folders/1sP9alvtJpKOGglPtPbCgJfGnJly-9Ogf?usp=sharing"
                 target="_blank"

@@ -14,10 +14,10 @@ export default function AboutMe() {
         </motion.button>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-12 md:justify-between items-center">
+      <div className="flex flex-col md:flex-row gap-12 md:justify-between items-center text-center md:text-start">
         <img src={gojo} alt="image" className="w-72 xl:w-auto"/>
         <div className="lg:w-180 flex flex-col gap-4">
-          <h1 className="text-primary-900 font-semibold text-2xl xl:text-3xl mb-2">Curious about me? Here you have it</h1>
+          <h1 className="text-primary-900 font-semibold text-2xl xl:text-3xl mb-2 ">Curious about me? Here you have it</h1>
           <p className="text-primary-600 text-base font-normal">
             I’m an enthusiastic beginner in frontend development, focusing on React.js.
             I love combining the technical and visual parts of digital products. I'm passionate about creating great user experiences,

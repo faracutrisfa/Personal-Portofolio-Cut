@@ -11,7 +11,7 @@ export default function Experience() {
           className="px-5 py-1 bg-secondary-300 rounded-xl text-primary-600 font-bold text-sm">
           Experience
         </motion.button>
-        <h1 className="text-primary-600 font-normal text-lg lg:text-xl">Here is a quick summary of my most recent experiences</h1>
+        <h1 className="text-primary-600 font-normal text-lg lg:text-xl flex text-center">Here is a quick summary of my most recent experiences</h1>
       </div>
     </section>
   )
