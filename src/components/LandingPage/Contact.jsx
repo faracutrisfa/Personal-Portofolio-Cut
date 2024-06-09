@@ -28,7 +28,7 @@ export default function Contact() {
                     </h1>
                     <h1 className="flex text-primary-900 lg:text-4xl text-lg font-semibold lg:gap-5 gap-4 items-center">
                         <IoCallOutline />
-                        +628 95331014513
+                        +62 895331014513
                     </h1>
                 </div>
                 <div className="flex flex-col gap-4">
