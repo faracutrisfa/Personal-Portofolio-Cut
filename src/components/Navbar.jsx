@@ -35,7 +35,7 @@ export default function Navbar() {
 
 
   return (
-    <nav className={`w-full flex justify-between py-6 px-4 md:px-20 fixed top-0 z-50 transition-colors duration-300 ${isScrolled ? "bg-opacity-90 bg-primary-50 text-primary-900 shadow-lg" : "bg-transparent text-primary-600"}`}>
+    <nav className={`w-full flex justify-between py-6 px-4 lg:px-20 fixed top-0 z-50 transition-colors duration-300 ${isScrolled ? "bg-opacity-90 bg-primary-50 text-primary-900 shadow-lg" : "bg-transparent text-primary-600"}`}>
       <img src={Logo} alt="logo" />
       <ul className="gap-6 hidden md:flex">
         <Link
@@ -82,7 +82,7 @@ export default function Navbar() {
         <div
           className={`fixed top-0 right-0 h-full w-2/3 bg-white shadow-lg transition-transform ${click ? 'translate-x-0 duration-500' : 'translate-x-full duration-500'}`}>
           <div className="flex justify-between items-center p-4">
-            <img src={LogoDua} alt="logo" className="h-12" />
+            <img src={LogoDua} alt="logo" className="h-11" />
             <button onClick={handleClick}>
               <IoClose size={24} />
             </button>
