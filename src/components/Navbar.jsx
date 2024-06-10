@@ -74,7 +74,7 @@ export default function Navbar() {
           <a
             href="https://drive.google.com/drive/folders/1sP9alvtJpKOGglPtPbCgJfGnJly-9Ogf?usp=sharing"
             target="_blank"
-            className="border bg-secondary-300 rounded-xl px-4 py-2 active:bg-secondary-900">
+            className="border bg-secondary-300 rounded-xl px-4 py-2 active:bg-secondary-900 border-secondary-300">
             View CV
           </a>
         </li>
@@ -132,7 +132,7 @@ export default function Navbar() {
               <a
                 href="https://drive.google.com/drive/folders/1sP9alvtJpKOGglPtPbCgJfGnJly-9Ogf?usp=sharing"
                 target="_blank"
-                className="border bg-secondary-300 rounded-xl px-7 py-2 active:bg-secondary-900">
+                className="border bg-secondary-300 rounded-xl px-7 py-2 active:bg-secondary-900 border-secondary-300">
                 View CV
               </a>
             </li>

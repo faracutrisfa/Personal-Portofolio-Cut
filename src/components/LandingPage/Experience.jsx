@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function Experience() {
   return (
     <section id="Experience" className="lg:px-20 px-4 py-24 h-auto bg-primary-50">
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center gap-4 mb-6 md:mb-12">
         <motion.button
           whileTap={{
             scale: 0.95,
@@ -13,6 +13,7 @@ export default function Experience() {
         </motion.button>
         <h1 className="text-primary-600 font-normal text-lg lg:text-xl flex text-center">Here is a quick summary of my most recent experiences</h1>
       </div>
+      <h1 className="text-primary-600 font-semibold text-lg flex justify-center">coming soon....</h1>
     </section>
   )
 }
