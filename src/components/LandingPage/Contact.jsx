@@ -8,7 +8,7 @@ import { CiLinkedin } from "react-icons/ci";
 export default function Contact() {
     return (
         <section id="Contact" className="lg:px-20 px-4 py-24 h-auto">
-            <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col items-center gap-4 mb-6 md:mb-12 text-center">
                 <motion.button
                     whileTap={{
                         scale: 0.95,

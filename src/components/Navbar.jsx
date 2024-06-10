@@ -49,6 +49,14 @@ export default function Navbar() {
         <Link
           spy={true}
           smooth={true}
+          to="Experience"
+          onClick={() => handleLinkClick("Experience")}
+        >
+          <li className="hover:border-secondary-900 hover:text-secondary-900">Experience</li>
+        </Link>
+        <Link
+          spy={true}
+          smooth={true}
           to="Work"
           onClick={() => handleLinkClick("Work")}
         >
@@ -102,6 +110,14 @@ export default function Navbar() {
               onClick={() => handleLinkClick("AboutMe")}
             >
               <li className="hover:border-secondary-900 hover:text-secondary-900">About</li>
+            </Link>
+            <Link
+              spy={true}
+              smooth={true}
+              to="Experience"
+              onClick={() => handleLinkClick("Experience")}
+            >
+              <li className="hover:border-secondary-900 hover:text-secondary-900">Experience</li>
             </Link>
             <Link
               spy={true}

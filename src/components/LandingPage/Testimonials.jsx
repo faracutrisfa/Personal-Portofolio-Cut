@@ -4,7 +4,7 @@ import { testimoni } from "../../assets/data/Testimoni";
 export default function Testimonials() {
     return (
         <section id="Testimonials" className="lg:px-20 px-4 py-24 h-auto bg-primary-50">
-            <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col items-center gap-4 mb-12 text-center">
                 <motion.button
                     whileTap={{
                         scale: 0.95,

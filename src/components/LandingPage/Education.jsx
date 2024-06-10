@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function Education() {
   return (
     <section id="Education" className="lg:px-32 px-10 py-24 h-auto bg-primary-50">
-      <div className="flex flex-col items-center gap-4 mb-12">
+      <div className="flex flex-col items-center gap-4 mb-6 md:mb-12 text-center">
         <motion.button
           whileTap={{
             scale: 0.95,

@@ -4,7 +4,7 @@ import gojo from "../../assets/image/gojo_tumbal.svg"
 export default function AboutMe() {
   return (
     <section id="AboutMe" className="lg:px-20 px-4 py-24 bg-primary-50 h-auto">
-      <div className="flex items-center justify-center">
+      <div className="flex flex-col items-center gap-4 mb-6 md:mb-12 text-center">
         <motion.button
           whileTap={{
             scale: 0.95,
