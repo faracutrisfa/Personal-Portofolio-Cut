@@ -65,14 +65,6 @@ export default function Navbar() {
         <Link
           spy={true}
           smooth={true}
-          to="Testimonials"
-          onClick={() => handleLinkClick("Testimonials")}
-        >
-          <li className="hover:border-secondary-900 hover:text-secondary-900">Testimonials</li>
-        </Link>
-        <Link
-          spy={true}
-          smooth={true}
           to="Contact"
           onClick={() => handleLinkClick("Contact")}
         >
@@ -126,14 +118,6 @@ export default function Navbar() {
               onClick={() => handleLinkClick("Work")}
             >
               <li className="hover:border-secondary-900 hover:text-secondary-900">Work</li>
-            </Link>
-            <Link
-              spy={true}
-              smooth={true}
-              to="Testimonials"
-              onClick={() => handleLinkClick("Testimonials")}
-            >
-              <li className="hover:border-secondary-900 hover:text-secondary-900">Testimonials</li>
             </Link>
             <Link
               spy={true}
