@@ -124,7 +124,7 @@ export default function Navbar() {
               smooth={true}
               to="Contact"
               onClick={() => handleLinkClick("Contact")}
-            >
+            >   
               <li className="hover:border-secondary-900 hover:text-secondary-900">Contact</li>
             </Link>
             <hr className="w-full border-t-2 border-primary-50"></hr>
